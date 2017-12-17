@@ -8,7 +8,7 @@ public class ExampleTest {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		assertNotNull(org.eclipse.emf.edit.provider.ComposedAdapterFactory.class);
 	}
 
 }

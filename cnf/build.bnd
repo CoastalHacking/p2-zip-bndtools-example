@@ -26,6 +26,11 @@
 		name = Release; \
 		pretty = true; \
 		local = ${build}/release
+		
+-plugin.5.EmfRuntime: \
+	aQute.bnd.repository.p2.provider.P2Repository; \
+		name = EMF; \
+		url = ${fileuri;${build}}/emf
 
 -releaserepo: Release
 -baselinerepo: Release
