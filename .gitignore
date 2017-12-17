@@ -5,3 +5,4 @@ generated/
 /cnf/emf
 /build
 bin/
+bin_test/
