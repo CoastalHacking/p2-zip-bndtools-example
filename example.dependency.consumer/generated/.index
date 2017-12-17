@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repository increment="1513529398870" name="example.dependency.consumer" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="example.dependency.consumer"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="0.0.0.201712171649"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="7b4adf32768b1af71b9ca1d84ab28a8381a4ed962ddc4287528d039ecc53ddca"/>
+      <attribute name="url" value="generated/example.dependency.consumer.jar"/>
+      <attribute name="size" type="Long" value="2801"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="example.dependency.consumer"/>
+      <attribute name="bundle-version" type="Version" value="0.0.0.201712171649"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="example.dependency.consumer"/>
+      <attribute name="bundle-version" type="Version" value="0.0.0.201712171649"/>
+    </capability>
+    <capability namespace="bndtools.workspace">
+      <attribute name="bndtools.workspace" value="file:/Users/macgyver/eclipse/dsl-oxygen.0/ws-bndtools-p2zip-example"/>
+      <attribute name="project.path" value="/example.dependency.consumer"/>
+    </capability>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="effective" value="active"/>
+    </requirement>
+  </resource>
+</repository>
