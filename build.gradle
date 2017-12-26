@@ -30,7 +30,7 @@ task unzipEmf(dependsOn: verifyEmf, type: Copy) {
     from zipTree(downloadEmf.dest)
     into "${bnd_cnf}/emf"
 	doLast {
-	    bndWorkspace.repositories.findResult{ it.name == 'EMF' ? it : null }.refresh()
+	    bndWorkspace.repositories.findResult{ it.name == 'Emf' ? it : null }.refresh()
 	    println 'Refreshed EMF'
 	}
 }
